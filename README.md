@@ -1,1 +1,1 @@
-# free-code-camp
+# This repository includes completed projects from the freecodecamp.org course on Responsive Web Design
