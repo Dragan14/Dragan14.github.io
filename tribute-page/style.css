@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body, main {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgba(174,109,88,255), rgba(116,93,130,255));
+}
+
+#logo {
+    display: block;
+    width: 250px;
+    margin: 2em auto 0 auto;
+}
+
+.heading {
+    text-align: center;
+    color: #ffc500;
+    font-size: 200%;
+}
+
+#img-div {
+    margin: 0 auto;
+    width: 80%;
+    padding: 2%;
+    background-color: azure;
+    border: 1px solid azure;
+    border-radius: 8px;
+}
+
+#image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+#img-caption {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+#tribute-info {
+    display: block;
+    width: 50%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+#timeline {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 0;
+}
+
+.movie {
+    display: flex;
+    padding-left: 0;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    width: 50%;
+    height: 4em;
+    align-items: center;
+    font-size: 18px;
+}
+
+.year {
+    border-left: 2px solid #ffc500;
+    padding: 0;
+    color: #ffc500;
+}
+
+.poster {
+    border-left: 2px solid #ffc500;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 50%;
+}
+
+#quote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 2em auto 0 auto;
+    font-size: 120%;
+}
+
+#quote-image {
+    width: 100%;
+}
+
+#quote-text {
+    display: flex;
+    width: 100%;
+    font-style: italic;
+    height: 0.1em;
+    align-items: center;
+    justify-content: center;
+}
+
+#citation {
+    display: flex;
+    height: 0.1em;
+    align-items: flex-end;
+}
+
+#tribute-link {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 120%;
+}
+
+.bold {
+    font-weight: 900;
+}

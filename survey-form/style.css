@@ -1,54 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("./background.png");
+    background-size: contain;
+    background-position: center;
+    font-size: 16px;
+}
+
 body {
     width: 100%;
     height: 100%;
-    background-image: url(https://i.ibb.co/bb1Yc6X/starwarsbackground.png);
-    background-size: contain;
-    background-position: center;
+    margin: 0 0;
 }
 
 h1 {
-    font-size: 4em;
-    margin-top: 0;
+    font-size: 4rem;
+    margin: 0;
 }
 
 h1, p {
-    color: yellow;
+    color: #ffc500;    ;
     text-align: center;
-    font-family: "Arial Narrow";
     font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 p {
-    font-size: 120%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 form {
-    width: 80vw;
-    max-width: 600px;
-    min-width: 300px;
+    width: 80%;
+    max-width: 640px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
 fieldset {
-    margin: 3vh 0;
+    margin: 1.5em 0;
     padding: 2em 2em;
 }
 
 legend, label {
     display: block;
-    color: yellow;
+    color: #ffc500;    ;
     font-family: "Arial Narrow", Arial, sans-serif;
     text-align: left;
 }
 
 label {
-    margin: 1em 0;
-    font-size: 110%;
-    font-size: 120%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 legend {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 input {
@@ -58,7 +67,6 @@ input {
 input[type="text"], input[type="email"], input[type="number"], textarea {
     width: 100%;
     height: 2em;
-    margin: 0.5em 0 0 0;
 }
 
 select {
@@ -66,36 +74,48 @@ select {
 }
 
 textarea {
-    height: 5em;
+    height: 100%;
 }
 
 input[type="submit"] {
     display: block;
-    margin: 1em auto;
+    margin: 1rem auto;
     width: 5em;
     height: 2em;
-    font-size: 120%;
-    background-color: yellow;
+    font-size: 1.2rem;
+    background-color: #ffc500;
+}
+
+input[type="submit"]:hover {
+    background-color: darkorange;
 }
 
 a {
-    color: cyan;
+    color: blue;
 }
 
 a:visited {
-    color: red;
+    color: purple;
 }
   
 a:hover {
-    color: yellow;
+    color: #ffc500;
 }
 
 a:active {
-    color: yellow;
+    color: #ffc500;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    height: 20vh;
+    margin: 0;
+    width: 250px;
+    height: auto;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
 }
