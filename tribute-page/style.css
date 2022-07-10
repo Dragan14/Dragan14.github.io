@@ -25,7 +25,7 @@ body {
 .heading {
     text-align: center;
     color: #ffc500;
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 #img-div {
@@ -59,7 +59,7 @@ body {
 
 #timeline {
     width: 80%;
-    max-width: 500px;
+    max-width: 350px;
     margin: 0 auto;
     padding-left: 0;
     display: flex;
@@ -68,28 +68,30 @@ body {
     gap: 0 0;
 }
 
-.movie {
+.movie, .year {
     display: flex;
-    padding-left: 0;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     width: 50%;
-    height: 4em;
+    height: 5em;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .year {
+    padding-left: 0;
     border-left: 2px solid #ffc500;
-    padding: 0;
     color: #ffc500;
+}
+
+.movie {
+    padding-left: 5%;
 }
 
 .poster {
     border-left: 2px solid #ffc500;
     width: 100%;
-    padding-right: 5%;
-    padding-left: 50%;
+    padding-left: 55%;
 }
 
 #quote {
@@ -98,7 +100,7 @@ body {
     justify-content: center;
     width: 70%;
     margin: 2em auto 0 auto;
-    font-size: 120%;
+    font-size: 1.2rem;
 }
 
 #quote-image {
@@ -124,7 +126,7 @@ body {
     display: block;
     margin: 1em auto;
     text-align: center;
-    font-size: 120%;
+    font-size: 1.2rem;
 }
 
 .bold {
