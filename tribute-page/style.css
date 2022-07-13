@@ -7,13 +7,14 @@ html {
     font-size: 16px;
 }
 
-body, main {
+body,
+main {
     width: 100%;
     margin: 0;
 }
 
 body {
-    background: linear-gradient(rgba(174,109,88,255), rgba(116,93,130,255));
+    background: linear-gradient(rgba(174, 109, 88, 255), rgba(116, 93, 130, 255));
 }
 
 #logo {
@@ -68,7 +69,8 @@ body {
     gap: 0 0;
 }
 
-.movie, .year {
+.movie,
+.year {
     display: flex;
     padding-top: 2em;
     padding-bottom: 2em;

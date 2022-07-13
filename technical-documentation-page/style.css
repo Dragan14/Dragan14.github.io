@@ -1,0 +1,156 @@
+*:not(code) {
+  box-sizing: border-box;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  /* outline: 1px solid #f00 !important; */
+}
+
+html {
+  background-image: url("./background.png");
+  background-size: contain;
+  background-position: center;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+@media (min-aspect-ratio: 1/1) and (min-height: 330px) {
+  /* For desktop/laptop: */
+  /* Only if width is greater than height and height is greater than or equal to 330px*/
+
+  #heading {
+    position: fixed;
+    width: 150px;
+    height: 100%
+  }
+
+  #main-doc {
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 1rem;
+    padding: 0 5%;
+  }
+
+  #logo {
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+  }
+
+  #links {
+    height: calc(100% - 150px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    color: #ffc500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 32px;
+  }
+
+}
+
+@media (max-aspect-ratio: 1/1), (max-height: 329px) {
+  /* For mobile phones: */
+  /* Only if height is greater than width or height is less than or equal to 329px*/
+  #heading {
+    width: 100%;
+  }
+
+  #main-doc {
+    display: block;
+    margin: -3px auto 0 auto;
+    width: 90%;
+  }
+
+  #logo {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  h1 {
+    color: #ffc500;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  #links {
+    height: 78px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+#heading {
+  display: inline-block;
+  background: linear-gradient(rgba(227,0,11,0.5), rgba(223, 123, 0, 0.5));
+}
+
+#navbar {
+  height: 100%;
+}
+
+#links {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  color: #ffc500;
+}
+
+.nav-link {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  border-top: 2px solid #ffc500;
+  flex-grow: 1;
+}
+
+a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+.section-header {
+  color: white;
+  font-size: 30px;
+}
+
+p {
+  color: #ffc500;
+}
+
+li {
+  color: #ffc500;
+  padding-bottom: 1rem;
+  list-style-type: disc;
+}
+
+#trailer {
+  width: 100%;
+}
+
+code {
+  padding-left: 1rem;
+}
+
+#trailer {
+  display: block;
+  aspect-ratio: 966/543;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
