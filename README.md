@@ -1,1 +1,1 @@
-# This repository includes completed projects from the freecodecamp.org course on Responsive Web Design
+# This repository includes projects to practice my front-end development skills.

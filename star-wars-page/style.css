@@ -1,7 +1,7 @@
-*:not(code) {
+*{
   box-sizing: border-box;
   font-family: "Arial Narrow", Arial, sans-serif;
-  /* outline: 1px solid #f00 !important; */
+  /*outline: 1px solid #f00 !important;*/
 }
 
 html {
@@ -26,10 +26,10 @@ body {
   }
 
   #main-doc {
-    display: inline-block;
-    margin-left: 150px;
-    margin-top: 1rem;
-    padding: 0 5%;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 200px;
+    max-width: 1000px;
   }
 
   #logo {
@@ -39,7 +39,7 @@ body {
   }
 
   #links {
-    height: calc(100% - 150px);
+    height: calc(100% - 117.92px);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -88,6 +88,10 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+
+  .poster {
+    min-width: 125px;
+  }
 }
 
 #heading {
@@ -128,24 +132,28 @@ a:hover {
 .section-header {
   color: white;
   font-size: 30px;
+  padding-top: 2rem;
+}
+
+.movie-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 p {
+  display: inline;
   color: #ffc500;
-}
-
-li {
-  color: #ffc500;
-  padding-bottom: 1rem;
-  list-style-type: disc;
+  padding: 5%;
+  min-width: 160px;
 }
 
 #trailer {
   width: 100%;
 }
 
-code {
-  padding-left: 1rem;
+.poster {
+  width: 25%;
 }
 
 #trailer {
