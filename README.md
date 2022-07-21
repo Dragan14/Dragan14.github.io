@@ -1,1 +1,0 @@
-# This repository includes projects to practice my front-end development skills.
