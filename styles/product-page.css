@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Star Jedi" !important;
+    font-family: "Star Jedi";
 }
 
 html {
@@ -14,7 +14,6 @@ html {
 
 body {
     background-color: #eee;
-    font-family: 'Lato', sans-serif;
 }
 
 #page-wrapper {
