@@ -1,4 +1,8 @@
-@import url(https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi);
+@font-face {
+    font-family: "Star Jedi";
+    src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot");
+    src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi") format("svg");
+}
 
 * {
     margin: 0;
@@ -81,7 +85,7 @@ header {
     }
 
     #hero {
-        margin-top: 250px !important; 
+        margin-top: 250px !important;
     }
 }
 
