@@ -5,6 +5,18 @@ function Book(title, author, year, status) {
     this.status = status;
 }
 
+let books = [];
+
+function containsBook(object, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+        if ((list[i].title === object.title) && (list[i].author === object.author) && (list[i].year === object.year)) {
+            return true;
+        }
+    }
+    return false;
+}
+
 $("#add-book").on("click", function addBook() {
     const book = new Book($("#title").val(),$("#author").val(),$("#year").val(),$("#status").val());
 
@@ -23,6 +35,10 @@ $("#add-book").on("click", function addBook() {
     else if (isNaN(book.year) || (book.year > (new Date().getFullYear()))) {
         $("#error-message").css("display", "block");
         $("#error-message").text("Book year is not valid");
+    }
+    else if (containsBook(book,books) == true) {
+        $("#error-message").css("display", "block");
+        $("#error-message").text("Book is already added");
     }
     else {
         if ($("thead > tr").length <= 5) {
@@ -62,6 +78,7 @@ $("#add-book").on("click", function addBook() {
         $("#year").val("");
         $("#status").val("Read");
     }
+    books.push(book);
 });
 
 
