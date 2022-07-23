@@ -1,0 +1,155 @@
+* {
+    font-family: "Playfair Display", "sans-serif";
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.625rem;
+    background-color: lightblue;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: dodgerblue;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-message {
+    font-size: 1.75rem;
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+.field > p {
+    text-align: right;
+    width: 5rem;
+    padding-right: 4rem;
+}
+
+.field > label, select {
+    width: 80%;
+    max-width: 60rem;
+}
+
+.field > label > input {
+    width: 100%;
+}
+
+fieldset > label {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+section {
+    width: 100%;
+}
+
+table {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 80rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 3rem solid transparent ;
+    border-bottom: 3rem solid transparent ;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+th, td {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input[type="text"], select {
+    font-size: 1.5rem;
+}
+
+input[type="button"] {
+    height: 3rem;
+    text-align: center;
+    padding: 0;
+}
+
+fieldset > label > input[type="button"] {
+    width: 10rem;
+    font-size: 1.5rem;
+}
+
+td > label {
+    width: 100%
+}
+
+td > label > input[type="button"] {
+    width: 100%;
+    max-width: 8rem;
+}
+
+tbody > tr {
+    border-top: 4px solid white;
+}
+
+.delete, #add-book {
+    background-color:khaki;
+    border: 2px solid black;
+}
+
+.status[value="Read"] {
+    background-color:springgreen;
+}
+
+.status[value="Not Read"] {
+    background-color:indianred;
+}
+
+input[type="button"]:hover {
+    filter: brightness(90%);
+    transition: filter 0.5s;
+}
+
+input[type="button"] {
+    filter: brightness(90%);
+    transition: filter 0.5s;
+}
+
+tfoot {
+    display: none;
+}
+
+footer > p {
+    text-align: center;
+}
