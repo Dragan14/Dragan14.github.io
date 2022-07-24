@@ -7,7 +7,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Star Jedi";
 }
 
@@ -30,13 +31,19 @@ li {
 
 a {
     color: #000;
-    text-decoration-color: transparent;
+    -webkit-text-decoration-color: transparent;
+            text-decoration-color: transparent;
 }
 
 a:hover {
-    text-decoration-color: black;
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
     text-decoration-thickness: 3px;
+    -webkit-transition: -webkit-text-decoration-color 1s;
+    transition: -webkit-text-decoration-color 1s;
+    -o-transition: text-decoration-color 1s;
     transition: text-decoration-color 1s;
+    transition: text-decoration-color 1s, -webkit-text-decoration-color 1s;
 }
 
 /** global classes styling **/
@@ -59,9 +66,15 @@ a:hover {
 
 .grid {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-top: 2rem;
 }
 
@@ -73,15 +86,24 @@ header {
     top: 0;
     min-height: 75px;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
 }
 
 @media (max-width: 450px) {
     header {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     #hero {
@@ -104,11 +126,16 @@ header {
 }
 
 .logo>img {
-    height: 100%;
     max-width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding: 5px;
 }
@@ -127,9 +154,16 @@ nav {
     nav {
         margin-top: 10px;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
         padding: 0 50px;
     }
@@ -141,22 +175,40 @@ nav {
 
 nav>ul {
     width: 35vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 @media (max-width: 600px) {
     nav>ul {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
 #hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     height: 200px;
     margin-top: 80px;
@@ -184,6 +236,8 @@ nav>ul {
 
 #hero input[type='submit']:hover {
     background-color: darkorange;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
     transition: background-color 1s;
 }
 
@@ -194,9 +248,15 @@ nav>ul {
 }
 
 #features .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 48;
     height: 48px;
     margin-right: 1rem;
@@ -231,9 +291,16 @@ section {
 }
 
 #features .desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 125px;
     width: 80vw;
     padding: 5px;
@@ -256,12 +323,17 @@ section {
 
 #how-it-works {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #how-it-works>img {
-    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     width: 200px;
     display: block;
     margin: 0 auto;
@@ -270,15 +342,29 @@ section {
 
 #pricing {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
@@ -299,7 +385,9 @@ section {
 
 .product>ol {
     margin: 15px 0;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .product>ol>li {
@@ -315,12 +403,17 @@ section {
 
 .product>button:hover {
     background-color: darkorange;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
     transition: background-color 1s;
 }
 
 @media (max-width: 600px) {
     #pricing {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .product {
@@ -338,8 +431,12 @@ footer {
 }
 
 footer>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 footer>ul>li {
@@ -348,8 +445,12 @@ footer>ul>li {
 
 footer>span {
     margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     font-size: 0.9em;
     color: #444;
 }
