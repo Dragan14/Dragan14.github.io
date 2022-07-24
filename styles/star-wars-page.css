@@ -1,5 +1,6 @@
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Arial Narrow", Arial, sans-serif;
   /*outline: 1px solid #f00 !important;*/
 }
@@ -40,9 +41,16 @@ body {
 
   #links {
     height: calc(100% - 117.92px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   h1 {
@@ -97,6 +105,8 @@ body {
 
 #heading {
   display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227,0,11,0.5)), to(rgba(223, 123, 0, 0.5)));
+  background: -o-linear-gradient(rgba(227,0,11,0.5), rgba(223, 123, 0, 0.5));
   background: linear-gradient(rgba(227,0,11,0.5), rgba(223, 123, 0, 0.5));
 }
 
@@ -114,15 +124,23 @@ a {
 }
 
 .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   text-decoration: none;
   font-size: 21px;
   border-top: 2px solid #ffc500;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 a:hover {
@@ -139,8 +157,12 @@ a:hover {
 
 .movie-info {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: clip;
 }
 
