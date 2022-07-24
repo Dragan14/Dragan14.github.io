@@ -1,5 +1,6 @@
 * {
     font-family: "Playfair Display", "sans-serif";
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -19,8 +20,13 @@ p {
 }
 
 fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 80rem;
     margin: 0 auto;
@@ -31,9 +37,15 @@ fieldset {
 }
 
 .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -44,23 +56,28 @@ fieldset {
     display: none;
 }
 
-.field > p {
+.field>p {
     text-align: right;
     width: 5rem;
     padding-right: 4rem;
 }
 
-.field > label, select {
+.field>label,
+select {
     width: 80%;
     max-width: 60rem;
 }
 
-.field > label > input {
+.field>label>input {
     width: 100%;
 }
 
-fieldset > label {
+fieldset>label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 2rem;
 }
@@ -77,21 +94,24 @@ table {
     border-collapse: collapse;
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
-    border-top: 3rem solid transparent ;
-    border-bottom: 3rem solid transparent ;
+    border-top: 3rem solid transparent;
+    border-bottom: 3rem solid transparent;
     background-color: aliceblue;
     border-radius: 8px;
 }
 
-th, td {
+th,
+td {
     font-size: 1.5rem;
     text-align: center;
     padding: 0.5rem 0;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
     font-size: 1.5rem;
 }
 
@@ -101,51 +121,62 @@ input[type="button"] {
     padding: 0;
 }
 
-fieldset > label > input[type="button"] {
+fieldset>label>input[type="button"] {
     width: 10rem;
     font-size: 1.5rem;
 }
 
-td > label {
+td>label {
     width: 100%
 }
 
-td > label > input[type="button"] {
+td>label>input[type="button"] {
     width: 100%;
     max-width: 8rem;
 }
 
-tbody > tr {
+tbody>tr {
     border-top: 4px solid white;
 }
 
-.delete, #add-book {
-    background-color:khaki;
-    border: 2px solid black;
+.delete,
+#add-book {
+    background-color: khaki;
 }
 
 .status[value="Read"] {
-    background-color:springgreen;
+    background-color: springgreen;
 }
 
 .status[value="Not Read"] {
-    background-color:indianred;
+    background-color: indianred;
 }
 
 input[type="button"]:hover {
+    -webkit-filter: brightness(90%);
     filter: brightness(90%);
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
     transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
 }
 
 input[type="button"] {
+    -webkit-filter: brightness(90%);
     filter: brightness(90%);
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
     transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
+    border: 1px solid black;
 }
 
 tfoot {
     display: none;
 }
 
-footer > p {
+footer>p {
     text-align: center;
 }
