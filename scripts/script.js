@@ -19,3 +19,12 @@ navLinks.forEach((l) => {
 
 const footerText = "Dragan Stojanovski &copy; " + (new Date().getFullYear());
 $("#footer > .container-fluid").html(footerText);
+
+$(window).on("resize load", function calculateScrollPadding(e){     
+    console.log('here');
+    if ($(window).width() >= 265 ){
+        $("html").css({"scroll-padding-top": "72px"});
+    } else {
+        $("html").css({"scroll-padding-top": "112px"});
+    }
+});

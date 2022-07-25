@@ -13,10 +13,12 @@
 
 /* text css above hero image*/
 .hero_title {
+    overflow: hidden;
     font-size: 4.5rem;
 }
 
 .hero_desc {
+    overflow: hidden;
     font-size: 2rem;
 }
 
