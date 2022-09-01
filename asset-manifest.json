@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.11cc775e.css",
+    "main.js": "/shopping-cart/static/js/main.4012b981.js",
+    "static/media/aboutImg.jpg": "/shopping-cart/static/media/aboutImg.84f4c069fcee44ca5300.jpg",
+    "static/media/blue-regular-fit-teddy-jacket.jpg": "/shopping-cart/static/media/blue-regular-fit-teddy-jacket.b4da4b03e4b03b13b66b.jpg",
+    "static/media/black-oversized-relaxed-cotton-sweatshirt.jpg": "/shopping-cart/static/media/black-oversized-relaxed-cotton-sweatshirt.0553a637d6d3cd639f49.jpg",
+    "static/media/gray-relaxed-fit-sweatshirt.jpg": "/shopping-cart/static/media/gray-relaxed-fit-sweatshirt.79a9e2de4aa5d05bb07a.jpg",
+    "static/media/green-solid-round-neck-relaxed-fit-sweatshirt.jpg": "/shopping-cart/static/media/green-solid-round-neck-relaxed-fit-sweatshirt.f1080ed60427b9a0737a.jpg",
+    "static/media/green-solid-regular-fit-softshell-jacket.jpg": "/shopping-cart/static/media/green-solid-regular-fit-softshell-jacket.da1ea9db69c0f3ecf949.jpg",
+    "static/media/brown-relaxed-fit-sweatshirt.jpg": "/shopping-cart/static/media/brown-relaxed-fit-sweatshirt.50b274c16859d4dc0f15.jpg",
+    "static/media/gray-skinny-fit-cargo-joggers.jpg": "/shopping-cart/static/media/gray-skinny-fit-cargo-joggers.148eb453eb35e61a6bdb.jpg",
+    "static/media/off-white-solid-teddy-lined-trucker-jacket.jpg": "/shopping-cart/static/media/off-white-solid-teddy-lined-trucker-jacket.1b3653150914eef12e52.jpg",
+    "static/media/black-water-repellent-shell-jacket.jpg": "/shopping-cart/static/media/black-water-repellent-shell-jacket.b7db09341bf0433ea6f0.jpg",
+    "static/media/gray-solid-cotton-chinos.jpg": "/shopping-cart/static/media/gray-solid-cotton-chinos.baf37e7b1efde19c9984.jpg",
+    "static/media/blue-solid-twill-trousers.jpg": "/shopping-cart/static/media/blue-solid-twill-trousers.f12acbfa0d7f716c48d4.jpg",
+    "static/media/beige-flip-flops.jpg": "/shopping-cart/static/media/beige-flip-flops.b73834c87545494ad2c5.jpg",
+    "static/media/white-solid-twill-trousers.jpg": "/shopping-cart/static/media/white-solid-twill-trousers.9717859b2492454cd338.jpg",
+    "static/media/black-flip-flops.jpg": "/shopping-cart/static/media/black-flip-flops.0fed7048e7702de2fc48.jpg",
+    "static/media/brown-flip-flops.jpg": "/shopping-cart/static/media/brown-flip-flops.60e1f50f3dc3ad7d4249.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.11cc775e.css.map": "/shopping-cart/static/css/main.11cc775e.css.map",
+    "main.4012b981.js.map": "/shopping-cart/static/js/main.4012b981.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11cc775e.css",
+    "static/js/main.4012b981.js"
+  ]
+}
