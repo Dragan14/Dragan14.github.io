@@ -360,6 +360,14 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+#contact-row {
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  display: flex !important;
+  justify-content: space-around;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
