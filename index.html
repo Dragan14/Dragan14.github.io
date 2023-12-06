@@ -1,145 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Portfolio Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linking css file -->
-    <link rel="stylesheet" href="/styles/style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio - Dragan Stojanovski</title>
 </head>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dragan Stojanovski</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body class="light" id="top">
+  <header class="header center">
+    <h3>
+      <a href="https://dragan14.github.io/Dragan14.github.io" class="link">DS</a>
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
     </nav>
+  </header>
 
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hi, I'm Dragan</h2>
-                    <p class="hero_desc">This is my portfolio page</p>
-                </div>
-            </div>
+  <main>
+    <!-- About -->
+    <div class="about center">
+      <h1>Hi, I am <span class="about__name">Dragan Stojanovski.</span></h1>
+      <h2 class="about__role">A Software Developer</h2>
+      <p class="about__desc">
+        Consectetur neque sed quam molestiae consectetur nesciunt sit alias
+        Vitae libero perferendis reprehenderit optio veritatis Accusantium at
+        voluptatum cumque temporibus et Explicabo iste porro quis numquam
+        distinctio Repellendus adipisci nam perferendis amet eaque hic
+        Voluptates
+      </p>
+
+      <div class="about__contact center">
+        <a href="https://example.com">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+
+        <a href="https://github.com/dragan14" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/dragan14" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">SASS</li>
+            <li class="project__stack-item">TypeScript</li>
+            <li class="project__stack-item">React</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
         </div>
+
+        <div class="project">
+          <h3>Project 2</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">SASS</li>
+            <li class="project__stack-item">TypeScript</li>
+            <li class="project__stack-item">React</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Project 3</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">SASS</li>
+            <li class="project__stack-item">TypeScript</li>
+            <li class="project__stack-item">React</li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="/images/shopping-cart-page-image.png" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Shopping Cart Page</h4>
-                            <p class="card-text">Built with React</p>
-                            <div class="text-center">
-                                <a href="https://github.com/Dragan14/shopping-cart" class="btn btn-success" target="_blank">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="/images/weather-page-preview.png" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Weather Page</h4>
-                            <p class="card-text">Built with jQuery, CSS and HTML</p>
-                            <div class="text-center">
-                                <a href="/pages/weather-page.html" class="btn btn-success" target="_blank">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/library-page-preview.png" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Library page</h4>
-                            <p class="card-text">Built with jQuery, CSS and HTML</p>
-                            <div class="text-center">
-                                <a href="/pages/library-page.html" class="btn btn-success" target="_blank">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="/images/product-page-preview.png" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Page</h4>
-                            <p class="card-text">Built with CSS and HTML</p>
-                            <div class="text-center">
-                                <a href="/pages/product-page.html" class="btn btn-success" target="_blank">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <br>
-        </div>
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">HTML</li>
+        <li class="skills__list-item btn btn--plain">CSS</li>
+        <li class="skills__list-item btn btn--plain">SCSS</li>
+        <li class="skills__list-item btn btn--plain">JavaScript</li>
+        <li class="skills__list-item btn btn--plain">TypeScript</li>
+        <li class="skills__list-item btn btn--plain">React</li>
+        <li class="skills__list-item btn btn--plain">Redux</li>
+        <li class="skills__list-item btn btn--plain">Git</li>
+        <li class="skills__list-item btn btn--plain">Material UI</li>
+        <li class="skills__list-item btn btn--plain">Jest</li>
+        <li class="skills__list-item btn btn--plain">Enzyme</li>
+        <li class="skills__list-item btn btn--plain">CI/CD</li>
+      </ul>
     </section>
 
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-            <div class="social-icons mt-4 d-flex justify-content-around">
-                <a href="https://github.com/Dragan14" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/dragan-stojanovski-5a1089228" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="mailto:dragan.stojanovski@outlook.com?subject = Feedback&body = Message" target="_blank"><i
-                        class="fab fa fa-at"></i></a>
-            </div>
-        </div>
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:dragan.stojanovski@outlook.com">
+        <span class="btn btn--outline">Email me</span>
+      </a>
     </section>
+  </main>
 
-    <footer id="footer">
-        <div class="container-fluid"></div>
-    </footer>
+  <footer class="footer">
+    <a href="https://github.com/dragan14/Dragan14.github.io" class="link footer__link">
+      Created By Dragan Stojanovski
+    </a>
+  </footer>
 
-    <script src="/scripts/script.js"></script>
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
