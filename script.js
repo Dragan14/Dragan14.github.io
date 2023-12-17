@@ -19,6 +19,14 @@ const setTheme = (bodyClass, btnClass) => {
 	body.classList.remove(localStorage.getItem("portfolio-theme"));
 	btnTheme.classList.remove(localStorage.getItem("portfolio-btn-theme"));
 
+	if (
+		!localStorage.getItem("portfolio-theme") ||
+		!localStorage.getItem("portfolio-btn-theme")
+	) {
+		body.classList.remove("light");
+		btnTheme.classList.remove("fa-moon");
+	}
+
 	addThemeClass(bodyClass, btnClass);
 
 	localStorage.setItem("portfolio-theme", bodyClass);
@@ -33,6 +41,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		body.classList.remove("light");
 		btnTheme.classList.remove("fa-moon");
 		btnTheme.classList.add("fa-sun");
+	} else {
+		body.classList.remove("null");
+		btnTheme.classList.remove("null");
 	}
 });
 
