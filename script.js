@@ -36,7 +36,7 @@ const setTheme = (bodyClass, btnClass) => {
 const toggleTheme = () =>
   isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", () => {
   if (body.classList.contains("dark")) {
     body.classList.remove("light");
     btnTheme.classList.remove("fa-moon");

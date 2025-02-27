@@ -1,239 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be77940efa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="ds-logo.png" />
+    <title>Portfolio - Dragan Stojanovski</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script> -->
-  <script src="https://kit.fontawesome.com/be77940efa.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="ds-logo.png" />
-  <title>Portfolio - Dragan Stojanovski</title>
-</head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://dragan14.github.io/Dragan14.github.io" class="link"
+          >DS</a
+        >
+      </h3>
 
-<body class="light" id="top">
-  <header class="header center">
-    <h3>
-      <a href="https://dragan14.github.io/Dragan14.github.io" class="link">DS</a>
-    </h3>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-    <nav class="nav center">
-      <ul class="nav__list center">
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#skills">Skills</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#contact">Contact</a>
-        </li>
-      </ul>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fa-solid fa-moon"></i>
+        </button>
 
-      <button type="button" aria-label="toggle theme" class="btn btn--icon">
-        <i aria-hidden="true" id="btn-theme" class="fa-solid fa-moon"></i>
-      </button>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
 
-      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-        <i aria-hidden="true" class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Dragan Stojanovski.</span></h1>
+        <h2 class="about__role">A Software Developer</h2>
+        <p class="about__desc">
+          I am a student at The University of Melbourne and an aspiring Software
+          Developer.<br />I have a strong passion for computer science and
+          programming, and enjoy working on various projects.<br />With
+          experience in different areas of software development, I am constantly
+          expanding my knowledge and skills.
+        </p>
 
-  <main>
-    <!-- About -->
-    <div class="about center">
-      <h1>Hi, I am <span class="about__name">Dragan Stojanovski.</span></h1>
-      <h2 class="about__role">A Software Developer</h2>
-      <p class="about__desc">
-        I am a student at The University of Melbourne and an aspiring Software Developer.<br />I have a strong passion
-        for
-        computer science and programming, and enjoy working on various projects.<br />With experience in different areas
-        of software development, I
-        am
-        constantly expanding my knowledge and skills.
-      </p>
+        <div class="about__contact center">
+          <a
+            href="mailto:dragan.stojanovski@outlook.com?subject = Feedback&body = Message"
+            aria-label="email"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+          </a>
 
-      <div class="about__contact center">
+          <a
+            href="https://github.com/dragan14"
+            target="_blank"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+          </a>
 
-        <a href="mailto:dragan.stojanovski@outlook.com?subject = Feedback&body = Message" aria-label="email"
-          class="link link--icon">
-          <i aria-hidden="true" class="fa-solid fa-envelope"></i>
-        </a>
-
-        <a href="https://github.com/dragan14" target="_blank" aria-label="github" class="link link--icon">
-          <i aria-hidden="true" class="fa-brands fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/dragan-stojanovski-5a1089228" target="_blank" aria-label="linkedin"
-          class="link link--icon">
-          <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-      <br />
-      <!-- <a id="resume-link" href="dragan-stojanovski-resume.pdf" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/dragan-stojanovski-5a1089228"
+            target="_blank"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <br />
+        <!-- <a id="resume-link" href="dragan-stojanovski-resume.pdf" target="_blank">
         <span class="btn btn--outline">Resume</span>
       </a> -->
-    </div>
-
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
-
-      <div class="projects__grid">
-        <div class="project">
-          <h3>Kanvas Extension Network</h3>
-          <p class="project__description">
-            Developed for the <u>University of Melbourne</u>.<br />
-            The platform allows students to submit assignment requests, and for teachers to triage the requests.<br />
-            Fully integrated with the University of Melbourne Canvas LMS platform.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">TypeScript</li>
-            <li class="project__stack-item">React</li>
-            <li class="project__stack-item">Node</li>
-            <li class="project__stack-item">Firebase</li>
-            <li class="project__stack-item">Bootstrap</li>
-          </ul>
-          <a href="https://kens-b9059.web.app/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>Shopping Cart</h3>
-          <p class="project__description">
-            A fully functional e-commerce website for an example store, featuring a shopping cart functionality and
-            product listings.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">JavaScript</li>
-            <li class="project__stack-item">React</li>
-            <li class="project__stack-item">CSS</li>
-          </ul>
-
-          <a href="https://github.com/Dragan14/shopping-cart" target="_blank" aria-label="source code"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://shopping-cart-vhkl.onrender.com/" target="_blank" aria-label="live preview"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>Weather App</h3>
-          <p class="project__description">
-            A dynamic website with a modern design that uses location and weather APIs to provide real-time weather
-            data.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">JavaScript</li>
-            <li class="project__stack-item">JQuery</li>
-            <li class="project__stack-item">CSS</li>
-            <li class="project__stack-item">HTML</li>
-          </ul>
-
-          <a href="https://github.com/Dragan14/weather-app" target="_blank" aria-label="source code"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://weather-app-wxyz.onrender.com/" target="_blank" aria-label="live preview"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>Product Page</h3>
-          <p class="project__description">
-            A product page with a clean and modern UI for a fictional product.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">CSS</li>
-            <li class="project__stack-item">HTML</li>
-          </ul>
-
-          <a href="https://github.com/Dragan14/product-page" target="_blank" aria-label="source code"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://product-page-kho9.onrender.com/" target="_blank" aria-label="live preview"
-            class="link link--icon">
-            <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
       </div>
-    </section>
 
-    <!-- Skills -->
-    <section class="section skills" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain">TypeScript/JavaScript</li>
-        <li class="skills__list-item btn btn--plain">Java</li>
-        <li class="skills__list-item btn btn--plain">AWS</li>
-        <li class="skills__list-item btn btn--plain">React JS</li>
-        <li class="skills__list-item btn btn--plain">Node JS</li>
-        <li class="skills__list-item btn btn--plain">Spring Boot Framework</li>
-        <li class="skills__list-item btn btn--plain">Python</li>
-        <li class="skills__list-item btn btn--plain">Swift</li>
-        <li class="skills__list-item btn btn--plain">UX/UI</li>
-        <li class="skills__list-item btn btn--plain">SQL</li>
-        <li class="skills__list-item btn btn--plain">Mondo DB</li>
-        <li class="skills__list-item btn btn--plain">Firebase</li>
-        <li class="skills__list-item btn btn--plain">C</li>
-        <li class="skills__list-item btn btn--plain">C++ Game Development</li>
-        <li class="skills__list-item btn btn--plain">Agile Methodologies</li>
-        <li class="skills__list-item btn btn--plain">Jest</li>
-        <li class="skills__list-item btn btn--plain">CI/CD</li>
-        <li class="skills__list-item btn btn--plain">CSS</li>
-        <li class="skills__list-item btn btn--plain">Bootstrap</li>
-        <li class="skills__list-item btn btn--plain">HTML</li>
-        <li class="skills__list-item btn btn--plain">Git</li>
-      </ul>
-    </section>
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
 
-    <!-- Contact -->
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <div id="contact-row">
-        <a href="mailto:dragan.stojanovski@outlook.com?subject = Feedback&body = Message" aria-label="email"
-          class="link link--icon">
-          <i aria-hidden="true" class="fa-solid fa-envelope"></i> Email
-        </a>
-        <a href="https://github.com/dragan14" aria-label="github" class="link link--icon" target="_blank">
-          <i aria-hidden="true" class="fa-brands fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/dragan-stojanovski-5a1089228" aria-label="linkedin" class="link link--icon"
-          target="_blank">
-          <i aria-hidden="true" class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-      </div>
-    </section>
-  </main>
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Kanvas Extension Network</h3>
+            <p class="project__description">
+              Developed for the <u>University of Melbourne</u>.<br />
+              The platform allows students to submit assignment requests, and
+              for teachers to triage the requests.<br />
+              Fully integrated with the University of Melbourne Canvas LMS
+              platform.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Node</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">Bootstrap</li>
+            </ul>
+            <a
+              href="https://kens-b9059.web.app/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i>
+            </a>
+          </div>
 
-  <footer class="footer">
-    <a href="https://github.com/dragan14/Dragan14.github.io" class="link footer__link">
-      <i class="fa-regular fa-copyright"></i>
-      <script>document.write(new Date().getFullYear())</script>, Dragan Stojanovski
-    </a>
-  </footer>
+          <div class="project">
+            <h3>Shopping Cart</h3>
+            <p class="project__description">
+              A fully functional e-commerce website for an example store,
+              featuring a shopping cart functionality and product listings.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
 
-  <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fa-solid fa-arrow-up"></i>
+            <a
+              href="https://github.com/Dragan14/shopping-cart"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://shopping-cart-vhkl.onrender.com/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Weather App</h3>
+            <p class="project__description">
+              A dynamic website with a modern design that uses location and
+              weather APIs to provide real-time weather data.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">JQuery</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">HTML</li>
+            </ul>
+
+            <a
+              href="https://github.com/Dragan14/weather-app"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://weather-app-wxyz.onrender.com/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Product Page</h3>
+            <p class="project__description">
+              A product page with a clean and modern UI for a fictional product.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">HTML</li>
+            </ul>
+
+            <a
+              href="https://github.com/Dragan14/product-page"
+              target="_blank"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://product-page-kho9.onrender.com/"
+              target="_blank"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">
+            TypeScript/JavaScript
+          </li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">React JS</li>
+          <li class="skills__list-item btn btn--plain">Node JS</li>
+          <li class="skills__list-item btn btn--plain">
+            Spring Boot Framework
+          </li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Swift</li>
+          <li class="skills__list-item btn btn--plain">UX/UI</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Mondo DB</li>
+          <li class="skills__list-item btn btn--plain">Firebase</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">C++ Game Development</li>
+          <li class="skills__list-item btn btn--plain">Agile Methodologies</li>
+          <li class="skills__list-item btn btn--plain">Jest</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <div id="contact-row">
+          <a
+            href="mailto:dragan.stojanovski@outlook.com?subject = Feedback&body = Message"
+            aria-label="email"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-solid fa-envelope"></i> Email
+          </a>
+          <a
+            href="https://github.com/dragan14"
+            aria-label="github"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dragan-stojanovski-5a1089228"
+            aria-label="linkedin"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/dragan14/Dragan14.github.io"
+        class="link footer__link"
+      >
+        <i class="fa-regular fa-copyright"></i>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , Dragan Stojanovski
       </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
