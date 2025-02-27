@@ -4,8 +4,8 @@ const btnTheme = document.querySelector(".fa-moon");
 const btnHamburger = document.querySelector(".fa-bars");
 
 const addThemeClass = (bodyClass, btnClass) => {
-	body.classList.add(bodyClass);
-	btnTheme.classList.add(btnClass);
+  body.classList.add(bodyClass);
+  btnTheme.classList.add(btnClass);
 };
 
 const getBodyTheme = localStorage.getItem("portfolio-theme");
@@ -16,63 +16,63 @@ addThemeClass(getBodyTheme, getBtnTheme);
 const isDark = () => body.classList.contains("dark");
 
 const setTheme = (bodyClass, btnClass) => {
-	body.classList.remove(localStorage.getItem("portfolio-theme"));
-	btnTheme.classList.remove(localStorage.getItem("portfolio-btn-theme"));
+  body.classList.remove(localStorage.getItem("portfolio-theme"));
+  btnTheme.classList.remove(localStorage.getItem("portfolio-btn-theme"));
 
-	if (
-		!localStorage.getItem("portfolio-theme") ||
-		!localStorage.getItem("portfolio-btn-theme")
-	) {
-		body.classList.remove("light");
-		btnTheme.classList.remove("fa-moon");
-	}
+  if (
+    !localStorage.getItem("portfolio-theme") ||
+    !localStorage.getItem("portfolio-btn-theme")
+  ) {
+    body.classList.remove("light");
+    btnTheme.classList.remove("fa-moon");
+  }
 
-	addThemeClass(bodyClass, btnClass);
+  addThemeClass(bodyClass, btnClass);
 
-	localStorage.setItem("portfolio-theme", bodyClass);
-	localStorage.setItem("portfolio-btn-theme", btnClass);
+  localStorage.setItem("portfolio-theme", bodyClass);
+  localStorage.setItem("portfolio-btn-theme", btnClass);
 };
 
 const toggleTheme = () =>
-	isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
+  isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
 
 window.addEventListener("DOMContentLoaded", (event) => {
-	if (body.classList.contains("dark")) {
-		body.classList.remove("light");
-		btnTheme.classList.remove("fa-moon");
-		btnTheme.classList.add("fa-sun");
-	} else {
-		body.classList.remove("null");
-		btnTheme.classList.remove("null");
-	}
+  if (body.classList.contains("dark")) {
+    body.classList.remove("light");
+    btnTheme.classList.remove("fa-moon");
+    btnTheme.classList.add("fa-sun");
+  } else {
+    body.classList.remove("null");
+    btnTheme.classList.remove("null");
+  }
 });
 
 btnTheme.addEventListener("click", toggleTheme);
 
 const displayList = () => {
-	const navUl = document.querySelector(".nav__list");
+  const navUl = document.querySelector(".nav__list");
 
-	if (btnHamburger.classList.contains("fa-bars")) {
-		btnHamburger.classList.remove("fa-bars");
-		btnHamburger.classList.add("fa-times");
-		navUl.classList.add("display-nav-list");
-	} else {
-		btnHamburger.classList.remove("fa-times");
-		btnHamburger.classList.add("fa-bars");
-		navUl.classList.remove("display-nav-list");
-	}
+  if (btnHamburger.classList.contains("fa-bars")) {
+    btnHamburger.classList.remove("fa-bars");
+    btnHamburger.classList.add("fa-times");
+    navUl.classList.add("display-nav-list");
+  } else {
+    btnHamburger.classList.remove("fa-times");
+    btnHamburger.classList.add("fa-bars");
+    navUl.classList.remove("display-nav-list");
+  }
 };
 
 btnHamburger.addEventListener("click", displayList);
 
 const scrollUp = () => {
-	const btnScrollTop = document.querySelector(".scroll-top");
+  const btnScrollTop = document.querySelector(".scroll-top");
 
-	if (body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-		btnScrollTop.style.display = "block";
-	} else {
-		btnScrollTop.style.display = "none";
-	}
+  if (body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    btnScrollTop.style.display = "block";
+  } else {
+    btnScrollTop.style.display = "none";
+  }
 };
 
 document.addEventListener("scroll", scrollUp);
