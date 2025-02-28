@@ -384,7 +384,7 @@ main {
   }
 
   h1 {
-    line-height: 1.4; /* Increase from the default 1.2 */
+    line-height: 1.4;
   }
 
   #resume-link {
