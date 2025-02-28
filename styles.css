@@ -383,6 +383,10 @@ main {
     justify-content: center;
   }
 
+  h1 {
+    line-height: 1.4; /* Increase from the default 1.2 */
+  }
+
   #resume-link {
     display: flex;
     width: 100%;
@@ -391,7 +395,7 @@ main {
 
   .nav__list {
     flex-direction: column;
-    padding: 1em 0;
+    padding: 1.3em 0;
     position: absolute;
     right: 0;
     left: 0;
@@ -403,7 +407,7 @@ main {
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
-    z-index: 10; /* Added to ensure dropdown appears on top */
+    z-index: 10;
   }
 
   .display-nav-list {
