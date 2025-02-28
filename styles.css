@@ -391,15 +391,19 @@ main {
 
   .nav__list {
     flex-direction: column;
-    padding: 4em 0;
+    padding: 1em 0;
     position: absolute;
     right: 0;
     left: 0;
     top: 5em;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-bg-alt);
+    box-shadow:
+      rgba(0, 0, 0, 0.3) 0px 10px 20px,
+      rgba(0, 0, 0, 0.2) 0px 6px 10px;
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
+    z-index: 10; /* Added to ensure dropdown appears on top */
   }
 
   .display-nav-list {
